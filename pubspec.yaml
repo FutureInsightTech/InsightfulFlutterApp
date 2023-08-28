@@ -47,6 +47,7 @@ flutter:
 
   assets:
         - assets/lottie/splash_screen/Future_Insight.json
+        - assets/lottie/service/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

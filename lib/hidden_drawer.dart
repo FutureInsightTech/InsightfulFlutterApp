@@ -14,57 +14,74 @@ class HiddenDrawer extends StatefulWidget {
 }
 
 class _HiddenDrawerState extends State<HiddenDrawer> {
-  final text_style = TextStyle(
+  // ignore: non_constant_identifier_names
+  final text_style = const TextStyle(
       color: Colors.black, fontSize: 28.0, fontWeight: FontWeight.bold);
 
   //List containing all the screens for the drawer
   List<ScreenHiddenDrawer> _pages = [];
   //initialize the state
+  @override
   void initState() {
     super.initState();
     //Calling the pages
     _pages = [
       ScreenHiddenDrawer(
           ItemHiddenMenu(
-              name: 'Home', baseStyle: text_style, selectedStyle: text_style),
-          HomeScreen()),
+            name: 'Home',
+            baseStyle: text_style,
+            selectedStyle: text_style,
+            colorLineSelected: Colors.black,
+          ),
+          const HomeScreen()),
       //Blog Post Link
       ScreenHiddenDrawer(
           ItemHiddenMenu(
-              name: 'Blog Post',
-              baseStyle: text_style,
-              selectedStyle: text_style),
-          blog_post()),
+            name: 'Blog Post',
+            baseStyle: text_style,
+            selectedStyle: text_style,
+            colorLineSelected: Colors.black,
+          ),
+          const blog_post()),
 
       //Services
       ScreenHiddenDrawer(
           ItemHiddenMenu(
-              name: 'Services',
-              baseStyle: text_style,
-              selectedStyle: text_style),
-          services()),
+            name: 'Services',
+            baseStyle: text_style,
+            selectedStyle: text_style,
+            colorLineSelected: Colors.black,
+          ),
+          const Services()),
       //Author
       ScreenHiddenDrawer(
           ItemHiddenMenu(
-              name: 'Author', baseStyle: text_style, selectedStyle: text_style),
-          author()),
+            name: 'Author',
+            baseStyle: text_style,
+            selectedStyle: text_style,
+            colorLineSelected: Colors.black,
+          ),
+          const author()),
       //Contact
       ScreenHiddenDrawer(
           ItemHiddenMenu(
-              name: 'Contact us',
-              baseStyle: text_style,
-              selectedStyle: text_style),
-          contact_us())
+            name: 'Contact us',
+            baseStyle: text_style,
+            selectedStyle: text_style,
+            colorLineSelected: Colors.black,
+          ),
+          const contact_us())
     ];
   }
 
+  //main configuation for the hidden drawer
   @override
   Widget build(BuildContext context) {
     return HiddenDrawerMenu(
       backgroundColorMenu: Colors.deepOrange,
       screens: _pages,
       initPositionSelected: 0,
-      slidePercent: 50.0,
+      slidePercent: 45.0,
     );
   }
 }
