@@ -23,8 +23,8 @@ class _SplashScreenState extends State<SplashScreen> {
         context,
         PageTransition(
           child: const HiddenDrawer(),
-          type: PageTransitionType.rightToLeftWithFade,
-          duration: Duration(milliseconds: 500),
+          type: PageTransitionType.fade,
+          duration: const Duration(milliseconds: 500),
         ),
       );
     });
@@ -39,14 +39,14 @@ class _SplashScreenState extends State<SplashScreen> {
         children: [
           Lottie.asset(SplashScreen._animationPath),
           const SizedBox(height: 16.0),
-          const Text(
-            'Future Insight',
-            style: TextStyle(
-              color: Color(0xFFDA532C),
-              fontSize: 34.0,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+          // const Text(
+          //   'Future Insight',
+          //   style: TextStyle(
+          //     color: Color(0xFFDA532C),
+          //     fontSize: 34.0,
+          //     fontWeight: FontWeight.bold,
+          //   ),
+          // ),
         ],
       ),
     );

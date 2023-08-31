@@ -99,6 +99,11 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_web_plugins:
+    dependency: transitive
+    description: flutter
+    source: sdk
+    version: "0.0.0"
   hidden_drawer_menu:
     dependency: "direct main"
     description:
@@ -187,6 +192,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.7.3"
+  sensors_plus:
+    dependency: transitive
+    description:
+      name: sensors_plus
+      sha256: "362c8f4f001838b90dd5206b898bbad941bc0142479eab9a3415f0f79e622908"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.4.1"
+  sensors_plus_platform_interface:
+    dependency: transitive
+    description:
+      name: sensors_plus_platform_interface
+      sha256: "95f0cc08791b8bf0c41c5fa99c84be2a7d5bf60a811ddc17e1438b1e68caf0d3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.3"
+  sensors_plus_web:
+    dependency: transitive
+    description:
+      name: sensors_plus_web
+      sha256: fca8d7d9ab6233b2a059952666415508e252420be1ef54f092d07884da53ec5e
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.2"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -216,6 +245,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  stream_transform:
+    dependency: transitive
+    description:
+      name: stream_transform
+      sha256: "14a00e794c7c11aa145a170587321aedce29769c08d7f58b1d141da75e3b1c6f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
   string_scanner:
     dependency: transitive
     description:
@@ -240,6 +277,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.0"
+  tilt:
+    dependency: "direct main"
+    description:
+      name: tilt
+      sha256: f5f03b924c8b66fd0a2b357d81ab246b83cfe7b9214cd0180ec90cbbabbb73b8
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.2"
   typed_data:
     dependency: transitive
     description:

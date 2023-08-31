@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.black,
         primarySwatch: Colors.blue,
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           iconTheme: IconThemeData(color: Colors.black),
           color: Colors.deepOrangeAccent, //<-- SEE HERE
         ),

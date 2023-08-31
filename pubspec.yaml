@@ -25,6 +25,7 @@ dependencies:
   hidden_drawer_menu: ^3.0.1
   webview_flutter: ^4.2.3
   page_transition: ^2.0.9
+  tilt: ^0.0.2
 
 dev_dependencies:
   flutter_test:
