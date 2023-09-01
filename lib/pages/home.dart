@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
+//  Simple Code with no WebView
 // class HomeScreen extends StatelessWidget {
 //   HomeScreen({Key? key}) : super(key: key);
 
@@ -22,6 +23,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 //   }
 // }
 
+//basic web View Without ProgressBar and setup and lag
 // class HomeScreen extends StatefulWidget {
 //   const HomeScreen({super.key});
 
@@ -46,6 +48,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 //   }
 // }
 
+// Working Code but with Lag and Progress Bar
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
