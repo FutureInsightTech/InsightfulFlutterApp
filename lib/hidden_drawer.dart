@@ -33,7 +33,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
             selectedStyle: text_style,
             colorLineSelected: Colors.black,
           ),
-          HomeScreen()),
+          const HomeScreen()),
       //Blog Post Link
       ScreenHiddenDrawer(
           ItemHiddenMenu(
