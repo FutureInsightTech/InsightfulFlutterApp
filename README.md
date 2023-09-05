@@ -1,5 +1,4 @@
 <br>
-<br>
 <p align="center">
     <a herf="https://future-insight.blog/">
     <img src="/assets/images/futureinsightlogo.png" alt="Future Insight"  width="230px" height="230px">
@@ -18,6 +17,15 @@
 
 
 The Future Insight Android Application is a mobile app designed to provide insights and information about various future technologies and trends. It aims to educate and inspire users about the possibilities and advancements in fields such as artificial intelligence, machine learning, web development, and mobile app development.
+
+<div style="display: flex; justify-content: center;">
+  <div style="justify-content: center; align-items: center; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);">
+    <img src="/screenshorts/Thumbnail.png" alt="Future Insight Preview" style="display: block; max-width: 100%; height: auto; border-radius: 10px;">
+  </div>
+</div>
+<br>
+
+
 
 ## Usage:
 - Launch the Future Insight app on your Android device.
