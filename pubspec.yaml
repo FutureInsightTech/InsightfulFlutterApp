@@ -10,12 +10,12 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   lottie: ^2.6.0
-  hidden_drawer_menu: ^3.0.1
   page_transition: ^2.0.9
   tilt: ^0.0.2
   flutter_inappwebview: ^5.7.2+3
   contactus: ^1.2.3
   animated_text_kit: ^4.2.2
+  google_nav_bar: ^5.0.6
 
 dev_dependencies:
   flutter_test:

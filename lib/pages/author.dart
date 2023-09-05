@@ -11,9 +11,19 @@ class author extends StatelessWidget {
         onWillPop: () async {
           return Future.value(false);
         },
-        child: const Scaffold(
+        child: Scaffold(
+          appBar: AppBar(
+            leading: const Icon(
+              Icons.person_2,
+              color: Colors.white,
+              textDirection: null,
+            ),
+            title: const Text('Author: Abdul Rafay'),
+            backgroundColor: Theme.of(context).colorScheme.secondary,
+            titleSpacing: -5, // Set a smaller value here
+          ),
           backgroundColor: Colors.black,
-          body: WebViewWidget(
+          body: const WebViewWidget(
             url:
                 'https://future-insight.blog/author', // replace with your actual URL
           ),

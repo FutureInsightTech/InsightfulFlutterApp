@@ -4,107 +4,152 @@ import 'package:future_insight/pages/services/Assignment.dart';
 import 'package:future_insight/pages/services/ML.dart';
 import 'package:future_insight/pages/services/Web.dart';
 import 'package:future_insight/pages/services/Mobile.dart';
-import 'package:page_transition/page_transition.dart';
 
-class Services extends StatelessWidget {
+class Services extends StatefulWidget {
   const Services({Key? key}) : super(key: key);
+
+  @override
+  _ServicesState createState() => _ServicesState();
+}
+
+class _ServicesState extends State<Services> {
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     try {
       return WillPopScope(
-          onWillPop: () async {
-            return Future.value(false);
-          },
-          child: Scaffold(
-            backgroundColor: Colors.black,
-            body: ListView(
-              children: [
-                const Padding(
-                  padding: EdgeInsets.all(16.0),
-                  child: Text(
-                    'Our Services',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 16),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: ServiceItem(
-                    title: 'Student Assignments',
-                    gifAsset: 'assets/lottie/service/assignment.gif',
-                    onTap: () {
-                      Navigator.pushReplacement(
-                        context,
-                        PageTransition(
-                          child: const assignment_service(),
-                          type: PageTransitionType.rightToLeftWithFade,
-                          duration: const Duration(milliseconds: 500),
-                        ),
-                      );
-                    },
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: ServiceItem(
-                    title: 'Machine Learning Development',
-                    gifAsset: 'assets/lottie/service/machine-learning.gif',
-                    onTap: () {
-                      Navigator.pushReplacement(
-                        context,
-                        PageTransition(
-                          child: const ML_Service(),
-                          type: PageTransitionType.rightToLeftWithFade,
-                          duration: const Duration(milliseconds: 500),
-                        ),
-                      );
-                    },
-                  ),
-                ),
-                const SizedBox(height: 16),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: ServiceItem(
-                    title: 'Website Development',
-                    gifAsset: 'assets/lottie/service/web.gif',
-                    onTap: () {
-                      Navigator.pushReplacement(
-                        context,
-                        PageTransition(
-                          child: const Web_Devlopment(),
-                          type: PageTransitionType.rightToLeftWithFade,
-                          duration: const Duration(milliseconds: 500),
-                        ),
-                      );
-                    },
-                  ),
-                ),
-                const SizedBox(height: 16),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                  child: ServiceItem(
-                    title: 'Application Development',
-                    gifAsset: 'assets/lottie/service/mobile.gif',
-                    onTap: () {
-                      Navigator.pushReplacement(
-                        context,
-                        PageTransition(
-                          child: const application_development(),
-                          type: PageTransitionType.rightToLeftWithFade,
-                          duration: const Duration(milliseconds: 500),
-                        ),
-                      );
-                    },
-                  ),
-                ),
-              ],
+        onWillPop: () async {
+          return Future.value(false);
+        },
+        child: Scaffold(
+          appBar: AppBar(
+            leading: const Icon(
+              Icons.design_services,
+              color: Colors.white,
+              textDirection: null,
             ),
-          ));
+            title: const Text('Services'),
+            backgroundColor: Theme.of(context).colorScheme.secondary,
+            titleSpacing: -5, // Set a smaller value here
+          ),
+          backgroundColor: Colors.black,
+          body: ListView(
+            children: [
+              const Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Text(
+                  'Our Services',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: ServiceItem(
+                  title: 'Student Assignments',
+                  gifAsset: 'assets/lottie/service/assignment.gif',
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (_, __, ___) => const assignment_service(),
+                        transitionDuration: const Duration(microseconds: 500),
+                        transitionsBuilder: (_, a, __, c) => SlideTransition(
+                          position: Tween<Offset>(
+                            begin: const Offset(1.0, 0.0),
+                            end: Offset.zero,
+                          ).animate(a),
+                          child: c,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: ServiceItem(
+                  title: 'Machine Learning Development',
+                  gifAsset: 'assets/lottie/service/machine-learning.gif',
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (_, __, ___) => const ML_Service(),
+                        transitionDuration: const Duration(microseconds: 500),
+                        transitionsBuilder: (_, a, __, c) => SlideTransition(
+                          position: Tween<Offset>(
+                            begin: const Offset(1.0, 0.0),
+                            end: Offset.zero,
+                          ).animate(a),
+                          child: c,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
+              const SizedBox(height: 16),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: ServiceItem(
+                  title: 'Website Development',
+                  gifAsset: 'assets/lottie/service/web.gif',
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (_, __, ___) => const Web_Devlopment(),
+                        transitionDuration: const Duration(microseconds: 500),
+                        transitionsBuilder: (_, a, __, c) => SlideTransition(
+                          position: Tween<Offset>(
+                            begin: const Offset(1.0, 0.0),
+                            end: Offset.zero,
+                          ).animate(a),
+                          child: c,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
+              const SizedBox(height: 16),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: ServiceItem(
+                  title: 'Application Development',
+                  gifAsset: 'assets/lottie/service/mobile.gif',
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (_, __, ___) =>
+                            const application_development(),
+                        transitionDuration: const Duration(microseconds: 500),
+                        transitionsBuilder: (_, a, __, c) => SlideTransition(
+                          position: Tween<Offset>(
+                            begin: const Offset(1.0, 0.0),
+                            end: Offset.zero,
+                          ).animate(a),
+                          child: c,
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
     } catch (e) {
       // Handle the error here, you can display an error message or take any other appropriate action.
       return Scaffold(

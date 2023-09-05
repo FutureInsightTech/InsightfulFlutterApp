@@ -1,7 +1,5 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:future_insight/pages/services.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:future_insight/widgets/WebViewWidget.dart';
 
 // ignore: camel_case_types
@@ -17,16 +15,8 @@ class Web_Devlopment extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             leading: IconButton(
-              icon: const Icon(Icons.arrow_back, color: Colors.white),
-              onPressed: () => Navigator.pushReplacement(
-                context,
-                PageTransition(
-                  child: const Services(),
-                  type: PageTransitionType.leftToRightWithFade,
-                  duration: const Duration(milliseconds: 500),
-                ),
-              ),
-            ),
+                icon: const Icon(Icons.arrow_back, color: Colors.white),
+                onPressed: () => Navigator.pop(context)),
             title: const Text('Website Development'),
             backgroundColor: Theme.of(context).colorScheme.secondary,
           ),

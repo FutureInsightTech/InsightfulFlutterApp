@@ -128,14 +128,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  hidden_drawer_menu:
+  google_nav_bar:
     dependency: "direct main"
     description:
-      name: hidden_drawer_menu
-      sha256: "74ca9c4ffc45c05dec3fd4e12cd6bd0851029d909ee5531bf31244b7160f96b9"
+      name: google_nav_bar
+      sha256: "1c8e3882fa66ee7b74c24320668276ca23affbd58f0b14a24c1e5590f4d07ab0"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.1"
+    version: "5.0.6"
   js:
     dependency: transitive
     description:
