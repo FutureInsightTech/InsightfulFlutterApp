@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:future_insight/hidden_drawer.dart';
 import 'package:lottie/lottie.dart';
@@ -11,6 +12,7 @@ class SplashScreen extends StatefulWidget {
       'assets/lottie/splash_screen/Future_Insight.json';
 
   @override
+  // ignore: library_private_types_in_public_api
   _SplashScreenState createState() => _SplashScreenState();
 }
 
@@ -38,7 +40,22 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Lottie.asset(SplashScreen._animationPath),
-          const SizedBox(height: 16.0),
+          const SizedBox(height: 20),
+          AnimatedTextKit(
+            isRepeatingAnimation: false,
+            animatedTexts: [
+              TyperAnimatedText(
+                'Future Insight',
+                textStyle: const TextStyle(
+                  color: Colors.deepOrange,
+                  fontSize: 32.0,
+                ),
+                speed: const Duration(
+                    milliseconds:
+                        100), // Adjust this value to change the typing speed
+              ),
+            ],
+          ),
           // const Text(
           //   'Future Insight',
           //   style: TextStyle(

@@ -70,7 +70,7 @@ class _HiddenDrawerState extends State<HiddenDrawer> {
             selectedStyle: text_style,
             colorLineSelected: Colors.black,
           ),
-          const contact_us())
+          const ContactUSPage())
     ];
   }
 
