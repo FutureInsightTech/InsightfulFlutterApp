@@ -1,16 +1,38 @@
-# future_insight
+<p align="center">
+    <a herf="https://future-insight.blog/">
+    <img src="/assets/images/16.png" alt="Future Insight"  width="230px" height="230px">
+    </a>
+  <br>
+</p>
 
-A new Flutter project.
+<h1 align="center">
+    Hi there
+    <img src="https://raw.githubusercontent.com/nixin72/nixin72/master/wave.gif" 
+         alt="Waving hand animated gif"
+         height="35"
+         width="35" />
+     Welcome to Future Insight Application
+</h1>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+The Future Insight Android Application is a mobile app designed to provide insights and information about various future technologies and trends. It aims to educate and inspire users about the possibilities and advancements in fields such as artificial intelligence, machine learning, web development, and mobile app development.
 
-A few resources to get you started if this is your first Flutter project:
+## Usage:
+- Launch the Future Insight app on your Android device.
+- Browse through the available services and technologies.
+- Tap on a specific service to learn more about it.
+- Access educational resources and tutorials to enhance your knowledge.
+- Stay updated with the latest news and trends in the tech industry.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Contributing
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
+
+# License
+This project is licensed under the [MIT License](/LICENSE).
+
+# Contact
+For any inquiries or questions, free will to contact me via
+- [Email](mailto:99marafay@gmail.com)
+- [Contact Form](https://futrre-insight.blog/contact/)
+
