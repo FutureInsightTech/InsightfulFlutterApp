@@ -33,21 +33,15 @@ The Future Insight Android Application is a mobile app designed to provide insig
    - [Navigate to the Project Folder](#navigate-to-the-project-folder)
    - [Run the Emulator](#run-the-emulator)
    - [Run the Project](#run-the-project)
-
 2. [Usage](#usage)
    - [Launch the Future Insight App](#launch-the-future-insight-app)
    - [Browse Services and Technologies](#browse-services-and-technologies)
    - [Learn More About a Service](#learn-more-about-a-service)
    - [Access Educational Resources](#access-educational-resources)
    - [Stay Updated with News and Trends](#stay-updated-with-news-and-trends)
-
 3. [Contributing](#contributing)
-
 4. [License](#license)
-
 5. [Contact](#contact)
-
-Feel free to use this table of contents to navigate through the provided information.
 
 ## Installing Processor:
 1. Install Flutter on your system by following these links
@@ -63,14 +57,12 @@ git clone https://github.com/FutureInsightTech/Flutter-Android-Application.git
 6. Run the emulator `flutter emulator  --launch  <name of the emulator>` eg: `flutter emulator  --launch  Prometheus`
 7. Run the Project `flutter run`
 
-
 ## Usage:
 - Launch the Future Insight app on your Android device.
 - Browse through the available services and technologies.
 - Tap on a specific service to learn more about it.
 - Access educational resources and tutorials to enhance your knowledge.
 - Stay updated with the latest news and trends in the tech industry.
-
 
 ## Contributing
 Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
