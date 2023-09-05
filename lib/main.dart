@@ -15,9 +15,15 @@ class MyApp extends StatelessWidget {
       home: const SplashScreen(),
       theme: ThemeData(
         primaryColor: Colors.black,
-        primarySwatch: Colors.blue,
+        // primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.deepOrange,
+        ).copyWith(
+          secondary: Colors.deepOrangeAccent,
+        ),
+
         appBarTheme: const AppBarTheme(
-          iconTheme: IconThemeData(color: Colors.black),
+          iconTheme: IconThemeData(color: Colors.white),
           color: Colors.deepOrangeAccent,
         ),
       ),
