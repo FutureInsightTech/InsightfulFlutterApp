@@ -1,6 +1,8 @@
+<br>
+<br>
 <p align="center">
     <a herf="https://future-insight.blog/">
-    <img src="/assets/images/16.png" alt="Future Insight"  width="230px" height="230px">
+    <img src="/assets/images/futureinsightlogo.png" alt="Future Insight"  width="230px" height="230px">
     </a>
   <br>
 </p>
