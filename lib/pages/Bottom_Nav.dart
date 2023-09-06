@@ -39,11 +39,11 @@ class _NavbarState extends State<Navbar> {
       backgroundColor: Colors.black,
       // ignore: prefer_const_constructors
       bottomNavigationBar: Container(
-          color: Colors.deepOrangeAccent,
+          color: Colors.deepOrange,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
             child: GNav(
-              backgroundColor: Colors.deepOrangeAccent,
+              backgroundColor: Colors.deepOrange,
               activeColor: Colors.white,
               color: Colors.black,
               gap: 8,

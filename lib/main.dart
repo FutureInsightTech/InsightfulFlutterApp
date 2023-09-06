@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSwatch(
           primarySwatch: Colors.deepOrange,
         ).copyWith(
-          secondary: Colors.deepOrangeAccent,
+          secondary: Colors.deepOrange,
         ),
 
         appBarTheme: const AppBarTheme(
