@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:future_insight/widgets/WebViewWidget.dart';
-import 'package:future_insight/widgets/appbarbackbutton.dart';
+import 'package:future_insight/widgets/AppBar/appbarbackbutton.dart';
 
 // ignore: camel_case_types
 class assignment_service extends StatelessWidget {

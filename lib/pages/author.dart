@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:future_insight/widgets/WebViewWidget.dart';
-import 'package:future_insight/widgets/appbar.dart';
+import 'package:future_insight/widgets/AppBar/appbar.dart';
 
 // ignore: camel_case_types
 class author extends StatelessWidget {

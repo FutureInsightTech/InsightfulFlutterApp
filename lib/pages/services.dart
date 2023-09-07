@@ -4,7 +4,7 @@ import 'package:future_insight/pages/services/Assignment.dart';
 import 'package:future_insight/pages/services/ML.dart';
 import 'package:future_insight/pages/services/Web.dart';
 import 'package:future_insight/pages/services/Mobile.dart';
-import 'package:future_insight/widgets/appbar.dart';
+import 'package:future_insight/widgets/AppBar/appbar.dart';
 
 class Services extends StatefulWidget {
   const Services({Key? key}) : super(key: key);
