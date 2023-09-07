@@ -8,7 +8,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       : super(key: key);
 
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       backgroundColor: Theme.of(context).colorScheme.secondary,
-      titleSpacing: -5.0, // Set a smaller value here
+      titleSpacing: -5.0,
     );
   }
 }
