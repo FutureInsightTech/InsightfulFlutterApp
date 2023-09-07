@@ -16,6 +16,7 @@ dependencies:
   contactus: ^1.2.3
   animated_text_kit: ^4.2.2
   google_nav_bar: ^5.0.6
+  flutter_launcher_icons: ^0.13.1
 
 dev_dependencies:
   flutter_test:
@@ -40,3 +41,9 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/futureinsightlogo.png"
+  min_sdk_android: 19

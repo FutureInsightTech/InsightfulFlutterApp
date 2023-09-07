@@ -39,16 +39,17 @@ class _NavbarState extends State<Navbar> {
       backgroundColor: Colors.black,
       // ignore: prefer_const_constructors
       bottomNavigationBar: Container(
-          color: Colors.deepOrangeAccent,
+          // color: Colors.deepOrange,
+          color: Colors.black,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
             child: GNav(
-              backgroundColor: Colors.deepOrangeAccent,
+              backgroundColor: Colors.black,
               activeColor: Colors.white,
-              color: Colors.black,
+              color: Colors.deepOrange,
               gap: 8,
               padding: const EdgeInsets.all(16),
-              tabBackgroundColor: Colors.black,
+              tabBackgroundColor: Colors.deepOrange,
               tabs: const [
                 GButton(
                   icon: Icons.home,
