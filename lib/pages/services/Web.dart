@@ -1,6 +1,7 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:future_insight/widgets/WebViewWidget.dart';
+import 'package:future_insight/widgets/appbarbackbutton.dart';
 
 // ignore: camel_case_types
 class Web_Devlopment extends StatelessWidget {
@@ -13,13 +14,7 @@ class Web_Devlopment extends StatelessWidget {
           return Future.value(false);
         },
         child: Scaffold(
-          appBar: AppBar(
-            leading: IconButton(
-                icon: const Icon(Icons.arrow_back, color: Colors.white),
-                onPressed: () => Navigator.pop(context)),
-            title: const Text('Website Development'),
-            backgroundColor: Theme.of(context).colorScheme.secondary,
-          ),
+          appBar: BackCustomAppBar(title: "Website Development"),
           body: const WebViewWidget(
             url:
                 'https://future-insight.blog/services/web-development/', // replace with your actual URL

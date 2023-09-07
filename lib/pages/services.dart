@@ -4,6 +4,7 @@ import 'package:future_insight/pages/services/Assignment.dart';
 import 'package:future_insight/pages/services/ML.dart';
 import 'package:future_insight/pages/services/Web.dart';
 import 'package:future_insight/pages/services/Mobile.dart';
+import 'package:future_insight/widgets/appbar.dart';
 
 class Services extends StatefulWidget {
   const Services({Key? key}) : super(key: key);
@@ -26,16 +27,7 @@ class _ServicesState extends State<Services> {
           return Future.value(false);
         },
         child: Scaffold(
-          appBar: AppBar(
-            leading: const Icon(
-              Icons.design_services,
-              color: Colors.white,
-              textDirection: null,
-            ),
-            title: const Text('Services'),
-            backgroundColor: Theme.of(context).colorScheme.secondary,
-            titleSpacing: -5, // Set a smaller value here
-          ),
+          appBar: CustomAppBar(icon: Icons.design_services, title: "Services"),
           backgroundColor: Colors.black,
           body: ListView(
             children: [

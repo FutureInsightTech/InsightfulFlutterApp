@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:contactus/contactus.dart';
+import 'package:future_insight/widgets/appbar.dart';
 
 class ContactUS extends StatefulWidget {
   const ContactUS({Key? key}) : super(key: key);
@@ -18,16 +19,7 @@ class _ContactUSState extends State<ContactUS> {
             return Future.value(false);
           },
           child: Scaffold(
-            appBar: AppBar(
-              leading: const Icon(
-                Icons.contact_page,
-                color: Colors.white,
-                textDirection: null,
-              ),
-              title: const Text('Contact US'),
-              backgroundColor: Theme.of(context).colorScheme.secondary,
-              titleSpacing: -5, // Set a smaller value here
-            ),
+            appBar: CustomAppBar(icon: Icons.contact_page, title: "Contact US"),
             backgroundColor: Colors.black,
             body: Padding(
               padding: const EdgeInsets.only(top: 60, bottom: 50.0),

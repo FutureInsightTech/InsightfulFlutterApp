@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
-class CustomAppBar extends StatelessWidget {
-  final String title;
+class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final IconData icon;
+  final String title;
 
-  const CustomAppBar({super.key, required this.title, required this.icon});
+  CustomAppBar({Key? key, required this.icon, required this.title})
+      : super(key: key);
+
+  @override
+  Size get preferredSize => Size.fromHeight(kToolbarHeight);
 
   @override
   Widget build(BuildContext context) {
@@ -12,14 +16,15 @@ class CustomAppBar extends StatelessWidget {
       leading: Icon(
         icon,
         color: Colors.white,
-        textDirection: null,
       ),
       title: Text(
         title,
-        style: const TextStyle(color: Colors.white),
+        style: const TextStyle(
+          color: Colors.white,
+        ),
       ),
       backgroundColor: Theme.of(context).colorScheme.secondary,
-      titleSpacing: -5, // Set a smaller value here
+      titleSpacing: -5.0, // Set a smaller value here
     );
   }
 }
