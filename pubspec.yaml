@@ -1,7 +1,7 @@
+# Default Names:
 name: future_insight
 description: Future Insight Organization Application
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-version: 1.0.0+1
+publish_to: 'none' 
 environment:
   sdk: '>=3.1.0 <4.0.0'
 # Dependecies for This Project
@@ -17,13 +17,13 @@ dependencies:
   animated_text_kit: ^4.2.2
   google_nav_bar: ^5.0.6
   flutter_launcher_icons: ^0.13.1
-
+# Development SDK
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
 
-# The following section is specific to Flutter packages.
+# Assets Access
 flutter:
   uses-material-design: true
   assets:
@@ -42,6 +42,7 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
 
+# Application Icon 
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true

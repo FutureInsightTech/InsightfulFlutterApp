@@ -43,7 +43,7 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Private Keys  for app launch
-key.jks
-upload_certificate.pem
-android/key.properties
+# # Private Keys  for app launch
+# key.jks
+# upload_certificate.pem
+# android/key.properties
