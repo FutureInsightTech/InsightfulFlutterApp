@@ -52,7 +52,7 @@ class _ServicesState extends State<Services> {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                        pageBuilder: (_, __, ___) => const assignment_service(),
+                        pageBuilder: (_, __, ___) => const assignemnt_service(),
                         transitionDuration: const Duration(microseconds: 500),
                         transitionsBuilder: (_, a, __, c) => SlideTransition(
                           position: Tween<Offset>(
