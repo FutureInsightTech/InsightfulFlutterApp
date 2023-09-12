@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:future_insight/widgets/WebViewWidget.dart';
-import 'package:future_insight/widgets/AppBar/appbar.dart';
+import 'package:future_insight/src/widgets/WebViewWidget.dart';
+import 'package:future_insight/src/widgets/AppBar/appbar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

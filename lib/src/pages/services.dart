@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:future_insight/widgets/service-boxes.dart';
-import 'package:future_insight/pages/services/Assignment.dart';
-import 'package:future_insight/pages/services/ML.dart';
-import 'package:future_insight/pages/services/Web.dart';
-import 'package:future_insight/pages/services/Mobile.dart';
-import 'package:future_insight/widgets/AppBar/appbar.dart';
+import 'package:future_insight/src/widgets/service-boxes.dart';
+import 'package:future_insight/src/pages/services/Assignment.dart';
+import 'package:future_insight/src/pages/services/ML.dart';
+import 'package:future_insight/src/pages/services/Web.dart';
+import 'package:future_insight/src/pages/services/Mobile.dart';
+import 'package:future_insight/src/widgets/AppBar/appbar.dart';
 
 class Services extends StatefulWidget {
   const Services({Key? key}) : super(key: key);

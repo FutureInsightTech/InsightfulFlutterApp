@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:contactus/contactus.dart';
-import 'package:future_insight/widgets/AppBar/appbar.dart';
+import 'package:future_insight/src/widgets/AppBar/appbar.dart';
 
 class ContactUS extends StatefulWidget {
   const ContactUS({Key? key}) : super(key: key);
