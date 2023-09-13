@@ -50,19 +50,19 @@ class _ServicesState extends State<Services> {
                   gifAsset: 'assets/lottie/service/assignment.gif',
                   onTap: () {
                     Navigator.push(
-                      context,
-                      PageRouteBuilder(
-                        pageBuilder: (_, __, ___) => const assignemnt_service(),
-                        transitionDuration: const Duration(microseconds: 500),
-                        transitionsBuilder: (_, a, __, c) => SlideTransition(
-                          position: Tween<Offset>(
-                            begin: const Offset(1.0, 0.0),
-                            end: Offset.zero,
-                          ).animate(a),
-                          child: c,
-                        ),
-                      ),
-                    );
+                        context,
+                        PageRouteBuilder(
+                          pageBuilder: (_, __, ___) =>
+                              const assignemnt_service(),
+                          transitionDuration: const Duration(milliseconds: 300),
+                          transitionsBuilder: (_, a, __, c) => SlideTransition(
+                            position: Tween<Offset>(
+                              begin: const Offset(1.0, 0.0),
+                              end: Offset.zero,
+                            ).animate(a),
+                            child: c,
+                          ),
+                        ));
                   },
                 ),
               ),
@@ -76,7 +76,7 @@ class _ServicesState extends State<Services> {
                       context,
                       PageRouteBuilder(
                         pageBuilder: (_, __, ___) => const ML_Service(),
-                        transitionDuration: const Duration(microseconds: 500),
+                        transitionDuration: const Duration(milliseconds: 300),
                         transitionsBuilder: (_, a, __, c) => SlideTransition(
                           position: Tween<Offset>(
                             begin: const Offset(1.0, 0.0),
@@ -100,7 +100,7 @@ class _ServicesState extends State<Services> {
                       context,
                       PageRouteBuilder(
                         pageBuilder: (_, __, ___) => const Web_Devlopment(),
-                        transitionDuration: const Duration(microseconds: 500),
+                        transitionDuration: const Duration(milliseconds: 300),
                         transitionsBuilder: (_, a, __, c) => SlideTransition(
                           position: Tween<Offset>(
                             begin: const Offset(1.0, 0.0),
@@ -125,7 +125,7 @@ class _ServicesState extends State<Services> {
                       PageRouteBuilder(
                         pageBuilder: (_, __, ___) =>
                             const application_development(),
-                        transitionDuration: const Duration(microseconds: 500),
+                        transitionDuration: const Duration(milliseconds: 300),
                         transitionsBuilder: (_, a, __, c) => SlideTransition(
                           position: Tween<Offset>(
                             begin: const Offset(1.0, 0.0),
