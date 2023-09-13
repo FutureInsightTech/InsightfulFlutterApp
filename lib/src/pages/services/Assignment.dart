@@ -4,6 +4,7 @@ import 'package:future_insight/src/widgets/AppBar/appbarbackbutton.dart';
 
 // ignore: camel_case_types
 class assignemnt_service extends StatefulWidget {
+  // ignore: use_key_in_widget_constructors
   const assignemnt_service({Key? key});
 
   @override
@@ -32,7 +33,7 @@ class _assignemnt_serviceState extends State<assignemnt_service> {
                 const Text(
                   "Our Assignment Solutions:",
                   style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 29,
                     height: 1,
                     fontWeight: FontWeight.bold,
                     decorationThickness: 1.5,
@@ -45,7 +46,7 @@ class _assignemnt_serviceState extends State<assignemnt_service> {
                 const Text(
                   "Unlocking Your Academic Success",
                   style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 29,
                     height: 1,
                     fontWeight: FontWeight.bold,
                     decorationThickness: 1.5,
@@ -61,7 +62,7 @@ class _assignemnt_serviceState extends State<assignemnt_service> {
                   style: TextStyle(
                     fontSize: 18,
                     height: 1,
-                    fontWeight: FontWeight.normal,
+                    fontWeight: FontWeight.w300,
                     color: Colors.white,
                   ),
                 ),
@@ -69,7 +70,7 @@ class _assignemnt_serviceState extends State<assignemnt_service> {
                 const Text(
                   "Flexible Pricing: Choose the Plan That Fits Your Budget",
                   style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 29,
                     height: 1,
                     fontWeight: FontWeight.bold,
                     decorationThickness: 1.5,
@@ -175,74 +176,3 @@ class _assignemnt_serviceState extends State<assignemnt_service> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Old Code Base
-// import 'package:future_insight/src/widgets/WebViewWidget.dart';
-//  WebView Stateless Widget
-// class assignment_service extends StatelessWidget {
-//   const assignment_service({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return WillPopScope(
-//         onWillPop: () async {
-//           return Future.value(false);
-//         },
-//         child: Scaffold(
-//           appBar: BackCustomAppBar(
-//             title: "Student Assignment",
-//           ),
-//           body: const WebViewWidget(
-//             url:
-//                 'https://future-insight.blog/services/assignment/', // replace with your actual URL
-//           ),
-//         ));
-//   }
-// }
