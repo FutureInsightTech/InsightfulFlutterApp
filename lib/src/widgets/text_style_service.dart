@@ -13,7 +13,7 @@ class CustomTextStyles {
   static const TextStyle regularTextStyle = TextStyle(
     fontSize: 18,
     height: 1,
-    fontWeight: FontWeight.w300,
+    fontWeight: FontWeight.w200,
     color: Colors.white,
   );
 

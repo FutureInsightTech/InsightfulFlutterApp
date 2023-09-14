@@ -1,5 +1,7 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:future_insight/src/pages/submit-task.dart';
+import 'package:future_insight/src/pages/terms-&-condition.dart';
 import 'package:future_insight/src/widgets/AppBar/appbarbackbutton.dart';
 import 'package:future_insight/src/widgets/services-cards.dart';
 import 'package:future_insight/src/widgets/text_style_service.dart';
@@ -64,9 +66,55 @@ class _assignemnt_serviceState extends State<assignemnt_service> {
                   ],
                   buttonLabels: const ["Select Package", "Terms & Conditions"],
                   onButton1Pressed: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) =>
+                            const select_Package(),
+                        transitionDuration: const Duration(
+                            milliseconds:
+                                300), // Set the total animation duration
+                        transitionsBuilder:
+                            (context, animation, secondaryAnimation, child) {
+                          const begin = Offset(1.0, 0.0);
+                          const end = Offset.zero;
+                          var curve =
+                              Curves.easeInOut; // Adjust the curve as needed
+                          var tween = Tween(begin: begin, end: end)
+                              .chain(CurveTween(curve: curve));
+                          var offsetAnimation = animation.drive(tween);
+                          return SlideTransition(
+                            position: offsetAnimation,
+                            child: child,
+                          );
+                        },
+                      ),
+                    );
                     // Handle the first button tap
                   },
                   onButton2Pressed: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) =>
+                            const TermConditions(),
+                        transitionDuration: const Duration(milliseconds: 300),
+                        transitionsBuilder:
+                            (context, animation, secondaryAnimation, child) {
+                          const begin = Offset(1.0, 0.0);
+                          const end = Offset.zero;
+                          var curve =
+                              Curves.easeInOut; // Adjust the curve as needed
+                          var tween = Tween(begin: begin, end: end)
+                              .chain(CurveTween(curve: curve));
+                          var offsetAnimation = animation.drive(tween);
+                          return SlideTransition(
+                            position: offsetAnimation,
+                            child: child,
+                          );
+                        },
+                      ),
+                    );
                     // Handle the second button tap
                   },
                 ),
@@ -82,9 +130,55 @@ class _assignemnt_serviceState extends State<assignemnt_service> {
                   ],
                   buttonLabels: const ["Select Package", "Terms & Conditions"],
                   onButton1Pressed: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) =>
+                            const select_Package(),
+                        transitionDuration: const Duration(
+                            milliseconds:
+                                300), // Set the total animation duration
+                        transitionsBuilder:
+                            (context, animation, secondaryAnimation, child) {
+                          const begin = Offset(1.0, 0.0);
+                          const end = Offset.zero;
+                          var curve =
+                              Curves.easeInOut; // Adjust the curve as needed
+                          var tween = Tween(begin: begin, end: end)
+                              .chain(CurveTween(curve: curve));
+                          var offsetAnimation = animation.drive(tween);
+                          return SlideTransition(
+                            position: offsetAnimation,
+                            child: child,
+                          );
+                        },
+                      ),
+                    );
                     // Handle the first button tap
                   },
                   onButton2Pressed: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) =>
+                            const TermConditions(),
+                        transitionDuration: const Duration(milliseconds: 300),
+                        transitionsBuilder:
+                            (context, animation, secondaryAnimation, child) {
+                          const begin = Offset(1.0, 0.0);
+                          const end = Offset.zero;
+                          var curve =
+                              Curves.easeInOut; // Adjust the curve as needed
+                          var tween = Tween(begin: begin, end: end)
+                              .chain(CurveTween(curve: curve));
+                          var offsetAnimation = animation.drive(tween);
+                          return SlideTransition(
+                            position: offsetAnimation,
+                            child: child,
+                          );
+                        },
+                      ),
+                    );
                     // Handle the second button tap
                   },
                 ),
@@ -99,10 +193,55 @@ class _assignemnt_serviceState extends State<assignemnt_service> {
                   ],
                   buttonLabels: const ["Select Package", "Terms & Conditions"],
                   onButton1Pressed: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) =>
+                            const select_Package(),
+                        transitionDuration: const Duration(
+                            milliseconds:
+                                300), // Set the total animation duration
+                        transitionsBuilder:
+                            (context, animation, secondaryAnimation, child) {
+                          const begin = Offset(1.0, 0.0);
+                          const end = Offset.zero;
+                          var curve =
+                              Curves.easeInOut; // Adjust the curve as needed
+                          var tween = Tween(begin: begin, end: end)
+                              .chain(CurveTween(curve: curve));
+                          var offsetAnimation = animation.drive(tween);
+                          return SlideTransition(
+                            position: offsetAnimation,
+                            child: child,
+                          );
+                        },
+                      ),
+                    );
                     // Handle the first button tap
                   },
                   onButton2Pressed: () {
-                    // Handle the second button tap
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) =>
+                            const TermConditions(),
+                        transitionDuration: const Duration(milliseconds: 300),
+                        transitionsBuilder:
+                            (context, animation, secondaryAnimation, child) {
+                          const begin = Offset(1.0, 0.0);
+                          const end = Offset.zero;
+                          var curve =
+                              Curves.easeInOut; // Adjust the curve as needed
+                          var tween = Tween(begin: begin, end: end)
+                              .chain(CurveTween(curve: curve));
+                          var offsetAnimation = animation.drive(tween);
+                          return SlideTransition(
+                            position: offsetAnimation,
+                            child: child,
+                          );
+                        },
+                      ),
+                    );
                   },
                 )
               ],
