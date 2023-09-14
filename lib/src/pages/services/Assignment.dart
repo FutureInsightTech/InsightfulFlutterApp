@@ -1,6 +1,7 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:future_insight/src/widgets/AppBar/appbarbackbutton.dart';
+import 'package:future_insight/src/widgets/services-cards.dart';
 
 // ignore: camel_case_types
 class assignemnt_service extends StatefulWidget {
@@ -80,94 +81,21 @@ class _assignemnt_serviceState extends State<assignemnt_service> {
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 30),
-                Card(
-                  color: Colors.white,
-                  shadowColor: Colors.white,
-                  shape: const RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          "Normal Package",
-                          style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black,
-                          ),
-                        ),
-                        const SizedBox(height: 10),
-                        // Bullet points
-                        RichText(
-                          text: const TextSpan(
-                            children: [
-                              WidgetSpan(
-                                child: Padding(
-                                  padding: EdgeInsets.only(right: 8.0),
-                                  child: Icon(
-                                    Icons.check_circle,
-                                    color: Colors.orange,
-                                    size: 18,
-                                  ),
-                                ),
-                              ),
-                              TextSpan(
-                                text: "Solved Assignement\n",
-                                style: TextStyle(
-                                    color: Colors.black, fontSize: 18),
-                              ),
-                              WidgetSpan(
-                                child: Padding(
-                                  padding: EdgeInsets.only(right: 8.0),
-                                  child: Icon(
-                                    Icons.check_circle,
-                                    color: Colors.orange,
-                                    size: 18,
-                                  ),
-                                ),
-                              ),
-                              TextSpan(
-                                text: "Documentation for Assignment\n",
-                                style: TextStyle(
-                                    color: Colors.black, fontSize: 18),
-                              ),
-                              // Add more bullet points as needed
-                            ],
-                          ),
-                        ),
-
-                        const SizedBox(
-                            height:
-                                20), // Add spacing between bullet points and buttons
-
-                        // Buttons
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment
-                              .spaceAround, // Adjust button alignment
-                          children: [
-                            ElevatedButton(
-                              onPressed: () {
-                                // Handle the first button tap
-                              },
-                              child: const Text("Select Package"),
-                            ),
-                            ElevatedButton(
-                              onPressed: () {
-                                // Handle the second button tap
-                              },
-                              child: const Text("Terms & Condition"),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
+                CardService(
+                  cardTitle: "Normal Package",
+                  bulletPoints: const [
+                    "Solved Assignment",
+                    "Documentation for Assignment",
+                    // Add more bullet points as needed
+                  ],
+                  buttonLabels: const ["Select Package", "Terms & Conditions"],
+                  onButton1Pressed: () {
+                    // Handle the first button tap
+                  },
+                  onButton2Pressed: () {
+                    // Handle the second button tap
+                  },
                 )
-
-                // Add more cards with bullet points here if needed
               ],
             ),
           ),
