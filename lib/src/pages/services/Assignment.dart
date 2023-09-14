@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:future_insight/src/widgets/AppBar/appbarbackbutton.dart';
 import 'package:future_insight/src/widgets/services-cards.dart';
+import 'package:future_insight/src/widgets/text_style_service.dart';
 
 // ignore: camel_case_types
 class assignemnt_service extends StatefulWidget {
@@ -26,61 +27,35 @@ class _assignemnt_serviceState extends State<assignemnt_service> {
           title: "Student Assignment",
         ),
         body: Container(
-          alignment: Alignment.topCenter, // Set alignment to top center
+          alignment: Alignment.topCenter,
           child: Padding(
             padding: const EdgeInsets.all(25),
             child: ListView(
               children: [
                 const Text(
                   "Our Assignment Solutions:",
-                  style: TextStyle(
-                    fontSize: 29,
-                    height: 1,
-                    fontWeight: FontWeight.bold,
-                    decorationThickness: 1.5,
-                    decoration: TextDecoration.underline,
-                    color: Colors.white,
-                  ),
+                  style: CustomTextStyles.centeredTitleStyle,
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 20),
+                SizedBox(height: CustomTextStyles.defaultSpacing.vertical),
                 const Text(
                   "Unlocking Your Academic Success",
-                  style: TextStyle(
-                    fontSize: 29,
-                    height: 1,
-                    fontWeight: FontWeight.bold,
-                    decorationThickness: 1.5,
-                    decoration: TextDecoration.underline,
-                    color: Colors.white,
-                  ),
+                  style: CustomTextStyles.centeredTitleStyle,
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 30),
+                SizedBox(height: CustomTextStyles.defaultSpacing.vertical),
                 const Text(
                   "Welcome to Future Insight, your solution for expert assignment assistance. Our experienced team provides customized and high-quality assignment solutions for all subjects and academic levels. With our commitment to originality and confidentiality, you can trust us to help you excel in your academics. Join Future Insight today and unlock your full potential!",
                   textAlign: TextAlign.justify,
-                  style: TextStyle(
-                    fontSize: 18,
-                    height: 1,
-                    fontWeight: FontWeight.w300,
-                    color: Colors.white,
-                  ),
+                  style: CustomTextStyles.regularTextStyle,
                 ),
-                const SizedBox(height: 40),
+                SizedBox(height: CustomTextStyles.defaultSpacing.vertical),
                 const Text(
                   "Flexible Pricing: Choose the Plan That Fits Your Budget",
-                  style: TextStyle(
-                    fontSize: 29,
-                    height: 1,
-                    fontWeight: FontWeight.bold,
-                    decorationThickness: 1.5,
-                    decoration: TextDecoration.underline,
-                    color: Colors.white,
-                  ),
+                  style: CustomTextStyles.centeredTitleStyle,
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 30),
+                SizedBox(height: CustomTextStyles.defaultSpacing.vertical),
                 CardService(
                   cardTitle: "Normal Package",
                   bulletPoints: const [
