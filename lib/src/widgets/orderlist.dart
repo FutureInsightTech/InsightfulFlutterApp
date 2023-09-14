@@ -1,24 +1,3 @@
-// import 'package:flutter/material.dart';
-
-// class OrderedListItem extends StatelessWidget {
-//   final int number;
-//   final String text;
-
-//   const OrderedListItem(this.number, this.text, {super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return ListTile(
-//       title: Text(
-//         '$number. $text', // Displays the item number and text
-//         textAlign: TextAlign.justify,
-//         style: const TextStyle(
-//             fontSize: 18.0, fontWeight: FontWeight.w200, color: Colors.white),
-//       ),
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 
 class OrderedListItem extends StatelessWidget {
