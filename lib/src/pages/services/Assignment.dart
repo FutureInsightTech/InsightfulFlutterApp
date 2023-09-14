@@ -29,7 +29,7 @@ class _assignemnt_serviceState extends State<assignemnt_service> {
         body: Container(
           alignment: Alignment.topCenter,
           child: Padding(
-            padding: const EdgeInsets.all(25),
+            padding: const EdgeInsets.all(20),
             child: ListView(
               children: [
                 const Text(
@@ -61,7 +61,41 @@ class _assignemnt_serviceState extends State<assignemnt_service> {
                   bulletPoints: const [
                     "Solved Assignment",
                     "Documentation for Assignment",
+                  ],
+                  buttonLabels: const ["Select Package", "Terms & Conditions"],
+                  onButton1Pressed: () {
+                    // Handle the first button tap
+                  },
+                  onButton2Pressed: () {
+                    // Handle the second button tap
+                  },
+                ),
+                const SizedBox(height: 15),
+                CardService(
+                  cardTitle: "Advanced Package",
+                  bulletPoints: const [
+                    "Solved Assignment",
+                    "Documentation for Assignment",
+                    "Two Times for Alteration to Solved Assignment",
+                    "One Video Call Support"
                     // Add more bullet points as needed
+                  ],
+                  buttonLabels: const ["Select Package", "Terms & Conditions"],
+                  onButton1Pressed: () {
+                    // Handle the first button tap
+                  },
+                  onButton2Pressed: () {
+                    // Handle the second button tap
+                  },
+                ),
+                const SizedBox(height: 15),
+                CardService(
+                  cardTitle: "Premium Package",
+                  bulletPoints: const [
+                    "Solved Assignment",
+                    "Documentation for Assignment",
+                    "Four Times for Alteration to Solved Assignment",
+                    "Three Video Call Support"
                   ],
                   buttonLabels: const ["Select Package", "Terms & Conditions"],
                   onButton1Pressed: () {

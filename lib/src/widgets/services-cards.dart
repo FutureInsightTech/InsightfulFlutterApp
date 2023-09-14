@@ -45,7 +45,7 @@ class CardService extends StatelessWidget {
                   bulletPoints.map((point) => buildBulletPoint(point)).toList(),
             ),
             const SizedBox(
-                height: 20), // Add spacing between bullet points and buttons
+                height: 10), // Add spacing between bullet points and buttons
 
             // Buttons
             Row(
@@ -82,7 +82,7 @@ class CardService extends StatelessWidget {
             ),
           ),
           TextSpan(
-            text: text + '\n',
+            text: '$text\n',
             style: const TextStyle(color: Colors.black, fontSize: 18),
           ),
         ],

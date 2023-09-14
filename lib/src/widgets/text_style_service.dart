@@ -5,7 +5,7 @@ class CustomTextStyles {
     fontSize: 29,
     height: 1,
     fontWeight: FontWeight.bold,
-    decorationThickness: 1.5,
+    decorationThickness: 1,
     decoration: TextDecoration.underline,
     color: Colors.white,
   );
@@ -21,7 +21,7 @@ class CustomTextStyles {
     fontSize: 29,
     height: 1,
     fontWeight: FontWeight.bold,
-    decorationThickness: 1.5,
+    decorationThickness: 1,
     decoration: TextDecoration.underline,
     color: Colors.white,
   );
