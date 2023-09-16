@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:future_insight/widgets/service-boxes.dart';
-import 'package:future_insight/pages/services/Assignment.dart';
-import 'package:future_insight/pages/services/ML.dart';
-import 'package:future_insight/pages/services/Web.dart';
-import 'package:future_insight/pages/services/Mobile.dart';
-import 'package:future_insight/widgets/AppBar/appbar.dart';
+import 'package:future_insight/src/pages/services/android_app_dev.dart';
+import 'package:future_insight/src/widgets/service-boxes.dart';
+import 'package:future_insight/src/pages/services/assignemnt_service.dart';
+import 'package:future_insight/src/pages/services/machine-learning_service.dart';
+import 'package:future_insight/src/pages/services/web_dev.dart';
+import 'package:future_insight/src/widgets/AppBar/appbar.dart';
 
 class Services extends StatefulWidget {
   const Services({Key? key}) : super(key: key);
@@ -50,19 +50,19 @@ class _ServicesState extends State<Services> {
                   gifAsset: 'assets/lottie/service/assignment.gif',
                   onTap: () {
                     Navigator.push(
-                      context,
-                      PageRouteBuilder(
-                        pageBuilder: (_, __, ___) => const assignment_service(),
-                        transitionDuration: const Duration(microseconds: 500),
-                        transitionsBuilder: (_, a, __, c) => SlideTransition(
-                          position: Tween<Offset>(
-                            begin: const Offset(1.0, 0.0),
-                            end: Offset.zero,
-                          ).animate(a),
-                          child: c,
-                        ),
-                      ),
-                    );
+                        context,
+                        PageRouteBuilder(
+                          pageBuilder: (_, __, ___) =>
+                              const assignemnt_service(),
+                          transitionDuration: const Duration(milliseconds: 300),
+                          transitionsBuilder: (_, a, __, c) => SlideTransition(
+                            position: Tween<Offset>(
+                              begin: const Offset(1.0, 0.0),
+                              end: Offset.zero,
+                            ).animate(a),
+                            child: c,
+                          ),
+                        ));
                   },
                 ),
               ),
@@ -75,8 +75,9 @@ class _ServicesState extends State<Services> {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                        pageBuilder: (_, __, ___) => const ML_Service(),
-                        transitionDuration: const Duration(microseconds: 500),
+                        pageBuilder: (_, __, ___) =>
+                            const machine_learning_service(),
+                        transitionDuration: const Duration(milliseconds: 300),
                         transitionsBuilder: (_, a, __, c) => SlideTransition(
                           position: Tween<Offset>(
                             begin: const Offset(1.0, 0.0),
@@ -100,7 +101,7 @@ class _ServicesState extends State<Services> {
                       context,
                       PageRouteBuilder(
                         pageBuilder: (_, __, ___) => const Web_Devlopment(),
-                        transitionDuration: const Duration(microseconds: 500),
+                        transitionDuration: const Duration(milliseconds: 300),
                         transitionsBuilder: (_, a, __, c) => SlideTransition(
                           position: Tween<Offset>(
                             begin: const Offset(1.0, 0.0),
@@ -124,8 +125,8 @@ class _ServicesState extends State<Services> {
                       context,
                       PageRouteBuilder(
                         pageBuilder: (_, __, ___) =>
-                            const application_development(),
-                        transitionDuration: const Duration(microseconds: 500),
+                            const android_app_service(),
+                        transitionDuration: const Duration(milliseconds: 300),
                         transitionsBuilder: (_, a, __, c) => SlideTransition(
                           position: Tween<Offset>(
                             begin: const Offset(1.0, 0.0),

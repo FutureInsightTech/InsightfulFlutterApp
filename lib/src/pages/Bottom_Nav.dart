@@ -1,11 +1,11 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:future_insight/pages/author.dart';
-import 'package:future_insight/pages/blog_post.dart';
-import 'package:future_insight/pages/contact.dart';
-import 'package:future_insight/pages/services.dart';
-import 'package:future_insight/pages/home.dart';
+import 'package:future_insight/src/pages/author.dart';
+import 'package:future_insight/src/pages/blog_post.dart';
+import 'package:future_insight/src/pages/contact.dart';
+import 'package:future_insight/src/pages/services.dart';
+import 'package:future_insight/src/pages/home.dart';
 
 class Navbar extends StatefulWidget {
   // const Navbar({super.key});
