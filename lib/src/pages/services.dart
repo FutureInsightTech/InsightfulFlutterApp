@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:future_insight/src/pages/services/android_app_dev.dart';
 import 'package:future_insight/src/widgets/service-boxes.dart';
 import 'package:future_insight/src/pages/services/assignemnt_service.dart';
 import 'package:future_insight/src/pages/services/machine-learning_service.dart';
@@ -123,7 +124,8 @@ class _ServicesState extends State<Services> {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                        pageBuilder: (_, __, ___) => const assignemnt_service(),
+                        pageBuilder: (_, __, ___) =>
+                            const android_app_service(),
                         transitionDuration: const Duration(milliseconds: 300),
                         transitionsBuilder: (_, a, __, c) => SlideTransition(
                           position: Tween<Offset>(

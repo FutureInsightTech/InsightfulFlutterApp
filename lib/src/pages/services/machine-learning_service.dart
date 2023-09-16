@@ -23,7 +23,7 @@ class _machine_learning_serviceState extends State<machine_learning_service> {
       child: Scaffold(
         backgroundColor: Colors.black,
         appBar: BackCustomAppBar(
-          title: "Machine Learning Development",
+          title: "Machine Learning",
         ),
         body: Container(
           alignment: Alignment.topCenter,
