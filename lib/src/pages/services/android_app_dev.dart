@@ -60,9 +60,10 @@ class _android_app_serviceState extends State<android_app_service> {
                   cardTitle: "Normal Package",
                   bulletPoints: const [
                     "Personalize the UI to Your Liking",
-                    "Generate Diverse and Representative Datasets",
-                    "Custom Data Creation Made Easy",
-                    "Documentation"
+                    "Harnessing Cutting-Edge Technologies",
+                    "Comprehensive Guidance Documentation",
+                    "Expert Front-End Development",
+                    "One Video Call Support"
                   ],
                   buttonLabels: const ["Select Package", "Terms & Conditions"],
                   onButton1Pressed: () {
@@ -122,12 +123,6 @@ class _android_app_serviceState extends State<android_app_service> {
                 CardService(
                   cardTitle: "Advanced Package",
                   bulletPoints: const [
-                    "Seamlessly Train and Test Your Models",
-                    "Empower your ML Journey",
-                    "Achieve Accurate Results with Your Own Data",
-                    "Alteration to the Model",
-                    "One Video Call Support",
-                    "Documentation"
                     // Add more bullet points as needed
                   ],
                   buttonLabels: const ["Select Package", "Terms & Conditions"],
@@ -188,11 +183,7 @@ class _android_app_serviceState extends State<android_app_service> {
                 CardService(
                   cardTitle: "Premium Package",
                   bulletPoints: const [
-                    "Next-Level Model Training and Testing Experience",
-                    "Intuitive GUI and Powerful APIs for Your Models",
-                    "2 Alteration to ML Model",
-                    "2 Video Call Support",
-                    "Documentation"
+                    //add points here
                   ],
                   buttonLabels: const ["Select Package", "Terms & Conditions"],
                   onButton1Pressed: () {
