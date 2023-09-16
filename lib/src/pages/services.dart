@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:future_insight/src/widgets/service-boxes.dart';
-import 'package:future_insight/src/pages/services/Assignment.dart';
-import 'package:future_insight/src/pages/services/ML.dart';
-import 'package:future_insight/src/pages/services/Web.dart';
-import 'package:future_insight/src/pages/services/Mobile.dart';
+import 'package:future_insight/src/pages/services/assignemnt_service.dart';
+import 'package:future_insight/src/pages/services/machine-learning_service.dart';
+import 'package:future_insight/src/pages/services/web_dev.dart';
 import 'package:future_insight/src/widgets/AppBar/appbar.dart';
 
 class Services extends StatefulWidget {
@@ -75,7 +74,8 @@ class _ServicesState extends State<Services> {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                        pageBuilder: (_, __, ___) => const ML_Service(),
+                        pageBuilder: (_, __, ___) =>
+                            const machine_learning_service(),
                         transitionDuration: const Duration(milliseconds: 300),
                         transitionsBuilder: (_, a, __, c) => SlideTransition(
                           position: Tween<Offset>(
@@ -123,8 +123,7 @@ class _ServicesState extends State<Services> {
                     Navigator.push(
                       context,
                       PageRouteBuilder(
-                        pageBuilder: (_, __, ___) =>
-                            const application_development(),
+                        pageBuilder: (_, __, ___) => const assignemnt_service(),
                         transitionDuration: const Duration(milliseconds: 300),
                         transitionsBuilder: (_, a, __, c) => SlideTransition(
                           position: Tween<Offset>(

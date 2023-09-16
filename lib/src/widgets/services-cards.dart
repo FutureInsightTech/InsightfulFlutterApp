@@ -8,7 +8,8 @@ class CardService extends StatelessWidget {
   final VoidCallback onButton1Pressed;
   final VoidCallback onButton2Pressed;
 
-  CardService({
+  const CardService({
+    super.key,
     required this.cardTitle,
     required this.bulletPoints,
     required this.buttonLabels,
